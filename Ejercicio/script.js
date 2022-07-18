@@ -1,4 +1,4 @@
-prompt('prueba1');
+
 const persons={};
 function addpersons(){
     let name=prompt('Introduce tu nombre');
@@ -11,7 +11,7 @@ function addpersons(){
 
 const bart=new addpersons();
 
-alert(bart.name +','+bart.age+','+bart.hairColor);
-
+alert('Resumen de datos = '+bart.name +','+bart.age+','+bart.hairColor);
+let up=bart.hairColor.toUpperCase();
 const out = document.getElementById("person");
-out.innerHTML = 'el nombre introducido es '+bart.name +' tiene '+bart.age+' años y el color de su pelo es '+bart.hairColor;
+out.innerHTML = 'el nombre introducido es '+bart.name +' tiene '+bart.age+' años y el color de su pelo es '+up;
